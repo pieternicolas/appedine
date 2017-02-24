@@ -1,0 +1,23 @@
+{
+  "name": "appedine",
+  "version": "1.0.0",
+  "description": "Appedine web frontend",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pieternicolas/appedine.git"
+  },
+  "author": "Nicolas Pieter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pieternicolas/appedine/issues"
+  },
+  "homepage": "https://github.com/pieternicolas/appedine#readme",
+  "dependencies": {
+    "angular": "^1.6.2",
+    "bootstrap": "^3.3.7"
+  }
+}
