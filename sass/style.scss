@@ -1,0 +1,31 @@
+@import 'variables';
+
+// Navigation bar
+.navbar {
+	height:160px;
+	@include font();
+
+	.container {
+		height:50px;
+		margin-top:60px;
+	}
+
+	.navbar-brand {
+		height:40px;
+		padding:0;
+	}
+
+	a {
+		color:$light-gray;
+	}
+	
+	a:hover {
+		color:$primary;
+	}
+
+	.signup {
+		background-color:$primary;
+		color:$white;
+		@include border-radius(30px);
+	}
+}

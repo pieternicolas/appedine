@@ -1,0 +1,26 @@
+.navbar {
+  height: 160px;
+  font-family: brandon-grotesque, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 1px; }
+  .navbar .container {
+    height: 50px;
+    margin-top: 60px; }
+  .navbar .navbar-brand {
+    height: 40px;
+    padding: 0; }
+  .navbar a {
+    color: #BCC5CD; }
+  .navbar a:hover {
+    color: #FF2C77; }
+  .navbar .signup {
+    background-color: #FF2C77;
+    color: #FFFFFF;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    border-radius: 30px; }
+
+/*# sourceMappingURL=style.css.map */

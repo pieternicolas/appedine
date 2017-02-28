@@ -5,3 +5,19 @@ $font-stack: brandon-grotesque, sans-serif;
 $primary: #FF2C77;
 $gray: #343740;
 $light-gray: #BCC5CD;
+$white: #FFFFFF;
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin font () {
+    font-family: $font-stack;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 1px;
+}

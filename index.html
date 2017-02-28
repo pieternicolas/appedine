@@ -6,22 +6,22 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+	
+	<link rel="stylesheet" href="sass/style.css" type="text/css" />
+	
 	<title></title>
 </head>
 <body ng-app="appSpace">
+	<!-- Navigation -->
 	<nav class="navbar navbar-fixed-top" style="background-color: black">
 		<div class="container">
-			<a class="navbar-brand" href="index.html"><img src="res/logo.png" height="50px"></a>
-
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<a class="navbar-brand" href="index.html"><img src="res/Logo.png" height="50px"></a>
+			<div class="collapse navbar-collapse">
+				<!-- Navigation left -->
 	            <ul class="nav navbar-nav navbar-left">
 	                <li>
 	                    <a href="#">Unique spaces</a>
@@ -30,17 +30,21 @@
 	                    <a href="#">How it works</a>
 	                </li>
 	            </ul>
+	            <!-- Navigation left end -->
+	            <!-- Navigation right -->
 	            <ul class="nav navbar-nav navbar-right">
 	            	<li>
 	            		<a href="#">Log in</a>
 	            	</li>
 	            	<li>
-	            		<a href="#">Become a venue partner</a>
+	            		<a href="#" class="btn signup">Become a venue partner</a>
 	            	</li>
 	            </ul>
+	            <!-- Navigation right (end) -->
 	        </div>
 		</div>
 	</nav>
+	<!-- Navigation (end) -->
 
 	<div class="container">
 		<div>
@@ -51,6 +55,10 @@
 	<footer class="footer" style="background-color: red">
 		asdf
 	</footer>
-<script src="https://ajax.googleapis.cogitm/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	
+	<!-- Scripts -->
+	<script type="text/javascript" src="node_modules/vue/dist/vue.js"></script>
+	<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
