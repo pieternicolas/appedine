@@ -18,6 +18,7 @@
   "homepage": "https://github.com/pieternicolas/appedine#readme",
   "dependencies": {
     "angular": "^1.6.2",
-    "bootstrap": "^3.3.7"
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1"
   }
 }
