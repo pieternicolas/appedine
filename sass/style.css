@@ -7,14 +7,24 @@
   letter-spacing: 1px; }
   .navbar .container {
     height: 50px;
+    width: 90%;
     margin-top: 60px; }
   .navbar .navbar-brand {
     height: 40px;
-    padding: 0; }
+    padding: 0;
+    margin-right: 20px; }
+  .navbar .mini-logo {
+    height: 12px;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: right; }
   .navbar a {
     color: #BCC5CD; }
   .navbar a:hover {
     color: #FF2C77; }
+  .navbar li {
+    padding-left: 15px;
+    padding-right: 10px; }
   .navbar .signup {
     background-color: #FF2C77;
     color: #FFFFFF;
@@ -22,5 +32,15 @@
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     border-radius: 30px; }
+  .navbar .navbar-toggle {
+    color: #FFFFFF;
+    height: 50px;
+    margin: 0;
+    padding: 0; }
+
+.top {
+  height: 960px;
+  width: 100%;
+  background-color: black; }
 
 /*# sourceMappingURL=style.css.map */

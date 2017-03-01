@@ -3,16 +3,25 @@
 // Navigation bar
 .navbar {
 	height:160px;
-	@include font();
+	@include nav-font();
 
 	.container {
 		height:50px;
+		width:90%;
 		margin-top:60px;
 	}
 
 	.navbar-brand {
 		height:40px;
 		padding:0;
+		margin-right:20px;
+	}
+	
+	.mini-logo {
+		height:12px;
+		font-size:12px;
+		line-height:12px;
+		text-align:right;
 	}
 
 	a {
@@ -22,10 +31,27 @@
 	a:hover {
 		color:$primary;
 	}
+	
+	li {
+		padding-left:15px;
+		padding-right:10px;
+	}
 
 	.signup {
 		background-color:$primary;
 		color:$white;
 		@include border-radius(30px);
 	}
+	
+	.navbar-toggle {
+		color:$white;
+		height:50px;
+		@include reset();
+	}
+}
+
+.top {
+	height:960px;
+	width:100%;
+	background-color:black;
 }

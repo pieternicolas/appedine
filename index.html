@@ -15,36 +15,49 @@
 	
 	<title></title>
 </head>
-<body ng-app="appSpace">
-	<!-- Navigation -->
-	<nav class="navbar navbar-fixed-top" style="background-color: black">
-		<div class="container">
-			<a class="navbar-brand" href="index.html"><img src="res/Logo.png" height="50px"></a>
-			<div class="collapse navbar-collapse">
-				<!-- Navigation left -->
-	            <ul class="nav navbar-nav navbar-left">
-	                <li>
-	                    <a href="#">Unique spaces</a>
-	                </li>
-	                <li>
-	                    <a href="#">How it works</a>
-	                </li>
-	            </ul>
-	            <!-- Navigation left end -->
-	            <!-- Navigation right -->
-	            <ul class="nav navbar-nav navbar-right">
-	            	<li>
-	            		<a href="#">Log in</a>
-	            	</li>
-	            	<li>
-	            		<a href="#" class="btn signup">Become a venue partner</a>
-	            	</li>
-	            </ul>
-	            <!-- Navigation right (end) -->
-	        </div>
-		</div>
-	</nav>
-	<!-- Navigation (end) -->
+<body v-app="appSpace">
+	<div class="container top">
+		<!-- Navigation -->
+		<nav class="navbar navbar-fixed-top">
+			<div class="container">
+				<a class="navbar-brand" href="index.html">
+					<img src="res/Logo.png" height="38px">
+					<div class="mini-logo">
+						Chef on demand
+					</div>
+				</a>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+					<span class="glyphicon glyphicon-th-list"></span>                      
+				</button>
+				<div class="collapse navbar-collapse row" id="navbar">
+					<!-- Navigation left -->
+					<div class="navbar-left">
+						<ul class="nav navbar-nav">
+							<li>
+								<a href="#">Chef</a>
+							</li>
+							<li>
+								<a href="#">How it works</a>
+							</li>
+						</ul>
+					</div>
+					<!-- Navigation left end -->
+					<!-- Navigation right -->
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="#">Log in</a>
+						</li>
+						<li>
+							<a href="#" class="btn signup">Become chef</a>
+						</li>
+					</ul>
+					<!-- Navigation right (end) -->
+				</div>
+			</div>
+		</nav>
+		<!-- Navigation (end) -->
+		
+	</div>
 
 	<div class="container">
 		<div>

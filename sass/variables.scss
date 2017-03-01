@@ -14,10 +14,15 @@ $white: #FFFFFF;
     border-radius: $radius;
 }
 
-@mixin font () {
+@mixin nav-font() {
     font-family: $font-stack;
     font-size: 14px;
     font-weight: 500;
     line-height: 40px;
     letter-spacing: 1px;
+}
+
+@mixin reset() {
+    margin:0;
+    padding:0;
 }
