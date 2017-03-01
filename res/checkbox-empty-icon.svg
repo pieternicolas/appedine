@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>checkbox-empty-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Chef---Homepage-&amp;-Sign-Up" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Merchant---Complete-Profile" transform="translate(-117.000000, -847.000000)" fill="#666B6F">
+            <path d="M117,855.00004 C117,850.58174 120.588903,847 125.00004,847 L138.99996,847 C143.41826,847 147,850.588903 147,855.00004 L147,868.99996 C147,873.41826 143.411097,877 138.99996,877 L125.00004,877 C120.58174,877 117,873.411097 117,868.99996 L117,855.00004 Z M119,854.997571 C119,851.685204 121.684529,849 124.997571,849 L139.002429,849 C142.314796,849 145,851.684529 145,854.997571 L145,869.002429 C145,872.314796 142.315471,875 139.002429,875 L124.997571,875 C121.685204,875 119,872.315471 119,869.002429 L119,854.997571 Z" id="checkbox-empty-icon"></path>
+        </g>
+    </g>
+</svg>
