@@ -1,0 +1,40 @@
+// Mixins
+
+@mixin font-line-height($size) {
+    font-size: $size;
+    height: $size;
+    line-height: $size;
+}
+
+@mixin button-template($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+    background-color:$primary;
+	color:$white;
+	font-weight: bold;
+}
+
+@mixin nav-font() {
+    font-family: $font-stack;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 1px;
+}
+
+@mixin reset() {
+    margin:0;
+    padding:0;
+}
+
+@mixin background-image($image) {
+    background-image:url("../res/#{$image}.jpg");
+    background-repeat:no-repeat;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}

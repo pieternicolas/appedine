@@ -11,33 +11,37 @@
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 	
+	<!-- Main stylesheet -->
 	<link rel="stylesheet" href="sass/style.css" type="text/css" />
-	
+
+	<!-- Font awesome -->
+	<link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.min.css">
+
 	<title></title>
 </head>
 <body v-app="appSpace">
 	<div class="container top">
 		<!-- Navigation -->
-		<nav class="navbar navbar-fixed-top">
+		<nav class="navbar">
 			<div class="container">
 				<a class="navbar-brand" href="index.html">
 					<img src="res/Logo.png" height="38px">
-					<div class="mini-logo">
-						Chef-on-demand
+					<div class="mini-logo text-capitalize">
+						chef-on-demand
 					</div>
 				</a>
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
 					<span class="glyphicon glyphicon-th-list"></span>                      
 				</button>
-				<div class="collapse navbar-collapse row" id="navbar">
+				<div class="collapse navbar-collapse row text-uppercase" id="navbar">
 					<!-- Navigation left -->
 					<div class="navbar-left">
 						<ul class="nav navbar-nav">
 							<li>
-								<a href="#">Chefs-on-demand</a>
+								<a href="#">chefs-on-demand</a>
 							</li>
 							<li>
-								<a href="#">How it works</a>
+								<a href="#">how it works</a>
 							</li>
 						</ul>
 					</div>
@@ -45,10 +49,10 @@
 					<!-- Navigation right -->
 					<ul class="nav navbar-nav navbar-right">
 						<li>
-							<a href="#">Log in</a>
+							<a href="#">log in</a>
 						</li>
 						<li>
-							<a href="#" class="btn signup">Become chef</a>
+							<a href="#" class="btn signup">become chef</a>
 						</li>
 					</ul>
 					<!-- Navigation right (end) -->
@@ -56,17 +60,52 @@
 			</div>
 		</nav>
 		<!-- Navigation (end) -->
-		
+		<div class="container-fluid text-uppercase">
+			<p class="row heading col-sm-8 col-sm-offset-2">
+				discover &amp; book
+			</p>
+			<p class="row heading-pink col-sm-8 col-sm-offset-2">
+				chefs in your area
+			</p>
+			<div class="row col-sm-2 col-sm-offset-5">
+				<a href="#" class="btn request">create request</a>
+			</div>
+		</div>
 	</div>
 
 	<div class="container">
 		<div>
-		
 		</div>
 	</div>
 
-	<footer class="footer" style="background-color: red">
-		asdf
+	<footer class="footer row container-fluid">
+		<div class="col-sm-2 row-1">
+			<img src="res/Logo.png" height="40px">
+			<div class="social-media">
+				<i class="fa fa-facebook-official fa-2x fb"></i>
+				<i class="fa fa-twitter fa-2x tw"></i>
+				<i class="fa fa-pinterest fa-2x pt"></i>
+			</div>
+			<div class="copyright">
+				<i class="fa fa-copyright" aria-hidden="true"></i>
+				2017 Appedine
+			</div>
+		</div>
+		<div class="col-sm-2 row-2">
+			asdf
+		</div>
+		<div class="col-sm-2 row-3">
+			asdf
+		</div>
+		<div class="col-sm-2 row-4">
+			asdf
+		</div>
+		<div class="col-sm-2 row-5">
+			asdf
+		</div>
+		<div class="col-sm-2 row-6">
+			asdf
+		</div>
 	</footer>
 	
 	<!-- Scripts -->

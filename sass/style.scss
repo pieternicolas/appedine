@@ -1,4 +1,10 @@
 @import 'variables';
+@import 'mixins';
+// @import '../node_modules/font-awesome/scss/font-awesome';
+
+body {
+	font-family: $font-stack;
+}
 
 // Navigation bar
 .navbar {
@@ -18,9 +24,7 @@
 	}
 	
 	.mini-logo {
-		height:12px;
-		font-size:12px;
-		line-height:12px;
+		@include font-line-height(12px);
 		text-align:right;
 	}
 
@@ -38,9 +42,7 @@
 	}
 
 	.signup {
-		background-color:$primary;
-		color:$white;
-		@include border-radius(30px);
+		@include button-template(30px);
 	}
 	
 	.navbar-toggle {
@@ -50,8 +52,49 @@
 	}
 }
 
+// Outside navigation
 .top {
-	height:480px;
+	height:600px;
 	width:100%;
-	background-color:black;
+	@include background-image(homepage--for-chefs);
 }
+
+.heading {
+	@include font-line-height(60px);
+	color: $white;
+	font-weight: 300;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.heading-pink {
+	@extend .heading;
+	color: $primary;
+	font-weight: 500;
+	margin-top: -10px;
+}
+
+.request {
+	@include button-template(30px);
+	padding-top: 15px;
+	padding-bottom: 15px;
+	display:block;
+	text-align:center;
+}
+
+// Footer
+.footer {
+	text-align: center;
+	background-color: $gray;
+	color: $light-gray;
+	padding-top: 60px;
+	padding-bottom: 50px;
+
+	.row-1 {
+		.social-media {
+			display: block;
+		}
+	}
+
+}
+
