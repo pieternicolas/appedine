@@ -6,11 +6,11 @@
     line-height: $size;
 }
 
-@mixin button-template($radius) {
-    -webkit-border-radius: $radius;
-    -moz-border-radius: $radius;
-    -ms-border-radius: $radius;
-    border-radius: $radius;
+@mixin button-template() {
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    border-radius: 30px;
     background-color:$primary;
 	color:$white;
 	font-weight: bold;
@@ -19,6 +19,27 @@
 		color: $primary;
 		border: 1px solid $primary;
 	}
+}
+
+@mixin inverse-button-template() {
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    border-radius: 30px;
+    background-color:$white;
+    color:$primary;
+    font-weight: bold;
+    border: 1px solid $primary;
+    a {
+        color: $primary;
+        text-decoration: none;
+    }
+    &:hover {
+        background-color: $primary;
+        a {
+            color: $white;
+        }
+    }
 }
 
 @mixin nav-font() {
