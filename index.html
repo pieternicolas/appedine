@@ -17,6 +17,8 @@
 	<!-- Font awesome -->
 	<link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.min.css">
 
+	
+
 	<title></title>
 </head>
 <body v-app="appSpace">
@@ -61,56 +63,149 @@
 		</nav>
 		<!-- Navigation (end) -->
 		<div class="container-fluid text-uppercase">
-			<p class="row heading col-sm-8 col-sm-offset-2">
+			<div class="row heading col-sm-8 col-sm-offset-2">
 				discover &amp; book
-			</p>
-			<p class="row heading-pink col-sm-8 col-sm-offset-2">
+				
+			</div>
+			<div class="row heading-pink col-sm-8 col-sm-offset-2">
 				chefs in your area
+				</div>
+			
+			<div class="row request col-sm-4 col-sm-offset-4">
+				<a href="#" class="btn request-btn">create request</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Main content -->
+	<!-- 1st content row -->
+	<div class="container-fluid content chefs">
+		<div class="row content-heading">
+			<h1 class="text-capitalize">
+				pro chefs: work with the best
+			</h1>
+			<p class="text-capitalize">
+				we promote and drive your sales for chef's culinary service / your pop up events / your unique spaces for corporate bookings / food tickets for you f &amp; b promo campaign
 			</p>
-			<div class="row col-sm-2 col-sm-offset-5">
-				<a href="#" class="btn request">create request</a>
+		</div>
+
+		<div class="row profile-row">
+			<a href="#" class="col-sm-3 profile">
+				<img class="profile-pic" src="res/placeholder.svg">
+				<div class="row profile-name text-uppercase">
+					william wheeler
+				</div>
+				<div class="row profile-quote text-capitalize">
+					microwave cooking is the wave of the future
+				</div>
+				<div class="row btn profile-view text-uppercase">
+					view profile
+				</div>
+			</a>
+			<a href="#" class="col-sm-3 profile">
+				<img class="profile-pic" src="res/placeholder.svg">
+				<div class="row profile-name text-uppercase">
+					blanche gonzalez
+				</div>
+				<div class="row profile-quote text-capitalize">
+					how to cook turkey on natural gas grills
+				</div>
+				<div class="row btn profile-view text-uppercase">
+					view profile
+				</div>
+			</a>
+			<a href="#" class="col-sm-3 profile">
+				<img class="profile-pic" src="res/placeholder.svg" >
+				<div class="row profile-name text-uppercase">
+					scott estrada
+				</div>
+				<div class="row profile-quote text-capitalize">
+					beryl cook s art quirky uk artist
+				</div>
+				<div class="row btn profile-view text-uppercase">
+					view profile
+				</div>
+			</a>
+			<a href="#" class="col-sm-3 profile">
+				<img class="profile-pic" src="res/placeholder.svg">
+				<div class="row profile-name text-uppercase">
+					celia paul
+				</div>
+				<div class="row profile-quote text-capitalize">
+					bbq myths getting you down
+				</div>
+				<div class="row btn profile-view text-uppercase">
+					view profile
+				</div>
+			</a>
+		</div>
+
+		<div class="row btn profile-all text-uppercase">
+			browse all chefs
+		</div>
+	</div>
+	<!-- 1st content row (end) -->
+
+	<!-- 2nd content row -->
+	<div class="container-fluid content how-it-works">
+		<div class="row content-heading">
+			<h1 class="text-capitalize">
+				how it works
+			</h1>
+			<p>
+				When it comes to barbequing, there are two main schools of thought for the techniques that you can use.
+			</p>
+		</div>
+
+		<div class="row how-row">
+			<div class="col-sm-4 how">
+				<img class="how-pic" src="res/content.png">
+				<div class="how-heading text-capitalize">
+					create request
+				</div>
+				<div class="how-quote">
+					You may be a person who loves to cook. You absolutely love to spend time in your kitchen.
+				</div>
+			</div>
+			<div class="col-sm-4 how">
+				<img class="how-pic" src="res/auction.png">
+				<div class="how-heading text-capitalize">
+					get bids
+				</div>
+				<div class="how-quote">
+					You may be a person who loves to cook. You absolutely love to spend time in your kitchen.
+				</div>
+			</div>
+			<div class="col-sm-4 how">
+				<img class="how-pic" src="res/chef.png">
+				<div class="how-heading text-capitalize">
+					choose chef
+				</div>
+				<div class="how-quote">
+					You may be a person who loves to cook. You absolutely love to spend time in your kitchen.
+				</div>
 			</div>
 		</div>
 	</div>
+	<!-- 2nd content row (end) -->
+	<!-- Main content (end) -->
 
-	<div class="container">
-		<div>
-		</div>
-	</div>
-
-	<footer class="footer row container-fluid">
-		<div class="col-sm-2 row-1">
-			<img src="res/Logo.png" height="40px">
-			<div class="social-media">
-				<i class="fa fa-facebook-official fa-2x fb"></i>
-				<i class="fa fa-twitter fa-2x tw"></i>
-				<i class="fa fa-pinterest fa-2x pt"></i>
-			</div>
-			<div class="copyright">
-				<i class="fa fa-copyright" aria-hidden="true"></i>
-				2017 Appedine
-			</div>
-		</div>
-		<div class="col-sm-2 row-2">
-			asdf
-		</div>
-		<div class="col-sm-2 row-3">
-			asdf
-		</div>
-		<div class="col-sm-2 row-4">
-			asdf
-		</div>
-		<div class="col-sm-2 row-5">
-			asdf
-		</div>
-		<div class="col-sm-2 row-6">
-			asdf
-		</div>
+	<!-- Footer -->
+	<footer id="footer" class="footer row container-fluid">
+		
 	</footer>
-	
+	<!-- Footer (end) -->	
 	<!-- Scripts -->
 	<script type="text/javascript" src="node_modules/vue/dist/vue.js"></script>
-	<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
 	<script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+	<script>
+		$(document).ready(function(){ 
+		  $.get("footer.html", function(data) {
+		    $("#footer").html(data);
+		  });
+		}); 
+	</script>
 </body>
 </html>

@@ -1,100 +1,111 @@
 @import 'variables';
 @import 'mixins';
+@import 'navigation';
+@import 'footer';
 // @import '../node_modules/font-awesome/scss/font-awesome';
 
 body {
 	font-family: $font-stack;
 }
 
-// Navigation bar
-.navbar {
-	height:160px;
-	@include nav-font();
+.content {
+	width: 85%;
 
-	.container {
-		height:50px;
-		width:90%;
-		margin-top:60px;
-	}
+	.content-heading {
+		h1 {
+			text-align: center;
+		}
 
-	.navbar-brand {
-		height:40px;
-		padding:0;
-		margin-right:20px;
-	}
-	
-	.mini-logo {
-		@include font-line-height(12px);
-		text-align:right;
-	}
-
-	a {
-		color:$light-gray;
-	}
-	
-	a:hover {
-		color:$primary;
-	}
-	
-	li {
-		padding-left:15px;
-		padding-right:10px;
-	}
-
-	.signup {
-		@include button-template(30px);
-	}
-	
-	.navbar-toggle {
-		color:$white;
-		height:50px;
-		@include reset();
+		p {
+			text-align: center;
+			@include centerize(60%);
+		}
 	}
 }
 
-// Outside navigation
-.top {
-	height:600px;
-	width:100%;
-	@include background-image(homepage--for-chefs);
-}
+.chefs {
+	padding: 20px;
 
-.heading {
-	@include font-line-height(60px);
-	color: $white;
-	font-weight: 300;
-	text-align: center;
-	margin-bottom: 30px;
-}
+	.profile-row {
+		margin-top: 20px;
 
-.heading-pink {
-	@extend .heading;
-	color: $primary;
-	font-weight: 500;
-	margin-top: -10px;
-}
+		.profile {
+			text-align: center;
+			text-decoration: none;
+			color: $gray;
+			padding: 20px;
 
-.request {
-	@include button-template(30px);
-	padding-top: 15px;
-	padding-bottom: 15px;
-	display:block;
-	text-align:center;
-}
+			.profile-pic {
+				@include centerize(100px);
+				margin-bottom: 10px;
+				margin-top: 10px;
+				border-radius: 50%;
+			}
 
-// Footer
-.footer {
-	text-align: center;
-	background-color: $gray;
-	color: $light-gray;
-	padding-top: 60px;
-	padding-bottom: 50px;
+			.profile-name {
+				@include font-line-height(30px);
+				font-weight: 500;
+			}
 
-	.row-1 {
-		.social-media {
-			display: block;
+			.profile-quote {
+				height: 50px;
+				font-family: $font-secondary;
+			}
+
+			.profile-view {
+				color: $primary;
+				@include centerize(150px);
+			}
+		}
+
+		.profile:hover {
+
+			.profile-pic {
+				@include transition(0.10s,linear);
+				border:3px solid $primary;
+			}
+
+			.profile-name {
+				color: $primary;
+			}
+
+			.profile-view {
+				@include button-template(30px);
+			}
 		}
 	}
 
+	.profile-all {
+		@include button-template(30px);
+		@include centerize(200px);
+	}
 }
 
+.how-it-works {
+	@extend .chefs;
+
+	.how-row {
+		@extend .profile-row;
+
+		.how {
+			@extend .profile;
+
+			.how-pic {
+				@include centerize(100px);
+				margin-bottom: 10px;
+				margin-top: 10px;
+			}
+
+			.how-heading {
+				@include font-line-height(35px);
+				font-weight: 600;
+				margin-top: 20px;
+				margin-bottom: 10px;
+			}
+
+			.how-quote {
+				font-family: $font-secondary;
+			}
+		}
+	}
+}

@@ -1,0 +1,45 @@
+// Footer styles
+
+.footer {
+	text-align: left;
+	background-color: $gray;
+	color: $light-gray;
+	padding:70px;
+
+	.footer-column {
+		margin-bottom: 20px;
+	}
+
+	.row-1 {
+		div {
+			margin-bottom: 20px;
+		}
+		.social-media {
+			display: block;
+			i {
+				margin-right: 10px;
+			}
+		}
+	}
+
+	.footer-title {
+		@include font-line-height(23px);
+		margin-bottom: -10px;
+	}
+
+	.footer-content {
+		ul {
+			@include reset();
+			list-style-type: none;
+		}
+
+		li {
+			@include font-line-height(21px);
+			padding-top: 15px;
+			padding-bottom: 15px;
+			a {
+				color: $white;
+			}
+		}
+	}
+}
