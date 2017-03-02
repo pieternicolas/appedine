@@ -42,6 +42,16 @@
     }
 }
 
+@mixin side-background($position) {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    $position: 0;
+    width: 40%;
+    height: 100vh;
+}
+
 @mixin nav-font() {
     font-family: $font-stack;
     font-size: 14px;
